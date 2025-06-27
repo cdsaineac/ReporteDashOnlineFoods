@@ -9,7 +9,7 @@ df = pd.read_csv('onlinefoods.csv')
 ## 2. Transformación de datos (Si es necesario)
 
 ## 3. Crear la aplicación Dash
-external_stylesheets = [dbc.themes.BOOTSTRAP]
+external_stylesheets = [dbc.themes.DARKLY]
 app = Dash(__name__, external_stylesheets=external_stylesheets)
 server = app.server
 app.title = "Reporte de pedidos de comida online"
