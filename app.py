@@ -11,6 +11,7 @@ df = pd.read_csv('onlinefoods.csv')
 ## 3. Crear la aplicación Dash
 external_stylesheets = [dbc.themes.BOOTSTRAP]
 app = Dash(__name__, external_stylesheets=external_stylesheets)
+server = app.server
 app.title = "Reporte de pedidos de comida online"
 
 ### 4. Definir el layout de la aplicación
@@ -82,9 +83,6 @@ def crear_graficas(valor_ocupacion, valor_genero, valor_edad):
 
     return grafica_barras, grafica_torta
 
-### 6. Ejecutar la aplicación
-if __name__ == '__main__':
-    app.run(debug=True)
 
 
 
